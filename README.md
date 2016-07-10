@@ -1,5 +1,5 @@
 # MS-DAWs
-A DAW made entirely in C# in DOS
+A DAW made entirely in C# with a DOS look.
 
 **Please Note (No pun intended)**
 This is not the best approach at a DAW because, well, it's DOS, and I don't think DOS even supports mouse events, so, no piano roll :(
