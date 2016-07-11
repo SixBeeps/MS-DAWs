@@ -16,12 +16,12 @@ namespace MSDaws
         static int duration;
         static void Main(string[] args)
         {
-            Console.WriteLine("MS-DAWs v0.1 created by Brandon Lee.");
+            Console.WriteLine("MS-DAWs v1.0.1 created by Brandon Lee.");
             Console.WriteLine("PLEASE NOTE: The pitch of a note CANNOT contain a decimal!");
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Action: (note, repl, play)");
+                Console.WriteLine("Action: (note, repl, play, new)");
                 actn = Console.ReadLine();
                 switch (actn)
                 {
@@ -77,6 +77,15 @@ namespace MSDaws
                             }
                         }
                         Console.WriteLine("Song Stopped");
+                        break;
+                    case "new":
+                        Console.WriteLine("Are you sure you want to start over? (Y/N)");
+                        ans = Console.ReadLine();
+                        ans = ans.ToUpper();
+                        if (ans == "Y")
+                        {
+                            noteData.Clear();
+                        }
                         break;
                     default:
                         Console.WriteLine(actn + " isn't an action.");
